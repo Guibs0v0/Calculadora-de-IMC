@@ -25,22 +25,22 @@ botao.addEventListener("click", function(){
     imc = peso/(altura*altura)
 
     if(imc<18.5){
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Abaixo do Peso";
     } else if(imc<25){
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Peso Normal";
     } else if(imc<30){
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Sobrepeso";
     } else if(imc<35){
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Obesidade Grau I";
     } else if(imc<40){
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Obesidade Grau II";
     } else{
-        texto.textContent = "Seu IMC é: "+ imc;
+        texto.textContent = "Seu IMC é: "+ imc.toFixed(2);
         classificacao.textContent = "Obesidade Grau III";
     } 
 })
